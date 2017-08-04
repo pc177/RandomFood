@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:background="@drawable/main2"
+    android:weightSum="1">
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/menubutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/fork"
+            android:onClick="onClick"
+            android:text="메뉴선택"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/todaymenubutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/fruit"
+            android:onClick="onClick"
+            android:text="오늘의 메뉴" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/randonbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/drink"
+            android:onClick="onClick"
+            android:text="랜덤메뉴"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icecream"
+            android:onClick="onClick"
+            android:text="토너먼트메뉴"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+
+</TableLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메뉴선택"
+        android:textSize="50dp"
+        android:layout_gravity="center"/>
+
+    <Switch
+        android:id="@+id/swich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="업체별"
+        />
+
+    <RadioGroup
+        android:id="@+id/RG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="120dp"
+        >
+
+        <RadioButton
+            android:id="@+id/A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="유나인" />
+
+        <RadioButton
+            android:id="@+id/B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="한스델리" />
+
+        <RadioButton
+            android:id="@+id/C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="만리장성"/>
+
+        <RadioButton
+            android:id="@+id/D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="김밥천국"/>
+
+        <RadioButton
+            android:id="@+id/E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="뚝땡"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:src="@drawable/yello"
+        android:layout_weight="1.24"
+        android:scaleType="centerInside"/>
+
+    <RadioGroup
+        android:id="@+id/RG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="한식"/>
+
+        <RadioButton
+            android:id="@+id/G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="면" />
+
+        <RadioButton
+            android:id="@+id/H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="덮밥"/>
+
+        <RadioButton
+            android:id="@+id/I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="돈가스" />
+
+        <RadioButton
+            android:id="@+id/J"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuselect"
+            android:text="볶음밥" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/resultbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:onClick="ll2"
+        android:text="결과" />
+
+</LinearLayout>
